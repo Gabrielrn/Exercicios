@@ -12,32 +12,33 @@ d) percentual de pessoas com salário até R$100,00.
 	
 	funcao inicio()
 	{
-		inteiro numFilhos=0,x
-		real sal=0.0,mediaSal=0.0,maiorSal=0.0,somarSal=0.0,somarFilhos=0.0,mediaFilhos=0.0,cont_ate100=0.0
+		inteiro numFilhos=0,x,somarFilhos=0,quantP=0
+		real sal=0.0,mediaSal=0.0,maiorSal=0.0,somarSal=0.0,mediaFilhos=0.0,cont_ate100=0.0,perc100
 
-		para(x=1;x<=20;x++){
+		para(x=1;x<=4;x++){
 			escreva("\nQual seu salário: R$")
 			leia(sal)
 			escreva("\nQuantos filhos(a) você tem: ")
 			leia(numFilhos)
 			limpa()
-			
-			se(sal <= 100){
-				cont_ate100++
-			}
-			se(sal > maiorSal){
-				maiorSal = sal
-			}
 			somarSal += sal
 			somarFilhos += numFilhos
+			
+			se(maiorSal <= sal){
+				maiorSal = sal
+			}
+			se(sal <= 100){
+				quantP++
+			}
 		}
-		mediaSal = somarSal / 20
-		mediaFilhos = somarFilhos / 20
+		mediaSal = somarSal / 4
+		mediaFilhos = somarFilhos / 4
+		perc100 = ( quantP * 100) / 4
 		escreva("\nSoma dos salários: R$",mat.arredondar(somarSal,2))
 		escreva("\nSoma dos filhos: ",mat.arredondar(somarFilhos,2))
 		escreva("\nMédia salário: R$",mat.arredondar(mediaSal,2))
 		escreva("\nMédia filhos: ",mat.arredondar(mediaFilhos,2))
-		escreva("\nPercentual de pessoas com até R$100 reais de salário: ",cont_ate100)
+		escreva("\nPercentual de pessoas com até R$100 reais de salário: ",perc100)
 		escreva("\nMaior salário: R$",maiorSal)
 	}
 }
@@ -46,7 +47,7 @@ d) percentual de pessoas com salário até R$100,00.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 758; 
+ * @POSICAO-CURSOR = 1214; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
