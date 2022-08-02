@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica-->mat
+	inclua biblioteca Matematica-->mat
 
 	/*
 	 * 6. Construa um programa em c que, tendo como dados de entrada dois pontos
