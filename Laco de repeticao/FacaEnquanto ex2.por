@@ -1,23 +1,23 @@
 programa
 {
 	/*
-	 * 1- Faça um programa que mostre uma contagem na tela de 233 a 456, só que
-contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando não estiver.
+	 * 2- Faça um programa que pegue um número do teclado e calcule a soma de todos os
+números de 1 até ele. Ex.: o usuário entra 7, o programa vai mostrar 28, pois
+1+2+3+4+5+6+7=28.
 	 */
 	
 	funcao inicio()
 	{
-		inteiro cont=233
+		inteiro num,cont=0
+
+		escreva("Digite um número: ")
+		leia(num)
 
 		faca{
-			escreva("\n ",cont)
-			se(cont >= 300 e cont <= 400){
-				cont = cont + 5
-			}
-			senao{
-				cont = cont + 3
-			}
-		}enquanto(cont <= 456)
+			cont += num
+			num -= 1
+		}enquanto(num >= 0)
+		escreva(cont)		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +25,7 @@ contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando não estive
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 290; 
+ * @POSICAO-CURSOR = 277; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
