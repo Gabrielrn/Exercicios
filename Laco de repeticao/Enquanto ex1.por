@@ -1,22 +1,30 @@
 programa
 {
-	/*
-	 * 2- Obtenha um número digitado pelo usuário e repita a operação de multiplicar ele por
-três (imprimindo o novo valor) até que ele seja maior do que 100. Ex.: se o usuário
-digita 5, deveremos observar na tela a seguinte sequência: 5 15 45 135.
-	 */
+/*
+ * 1-Elaborar um programa que efetue a leitura sucessiva de valores numéricos e
+apresente no final o total do somatório, a média e o total de valores lidos. O programa
+deve fazer as leituras dos valores enquanto o usuário estiver fornecendo valores
+positivos. Ou seja, o programa deve parar quando o usuário fornecer um valor
+negativo.
+ */
 	
 	funcao inicio()
 	{
-		inteiro num=0
+		real n=0.0,soma=0.0,media=0.0,total=0.0
 
-		escreva("\nDigite um número: ")
-		leia(num)
-		escreva(num," ")
-		enquanto(num <= 100){
-			num *= 3
-			escreva(num," ")
+		
+		enquanto(n >= 0){
+			escreva("\nDigite um número positivo: ")
+			leia(n)
+			se(n > 0){
+			soma += n//soma = soma + n
+			media = soma / n
+			total++//total = total + 1
+			}
 		}
+		escreva("\nSoma = ",soma)
+		escreva("\nMédia = ",media)
+		escreva("\nTotal dos valores lidos = ",total)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +32,7 @@ digita 5, deveremos observar na tela a seguinte sequência: 5 15 45 135.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 410; 
+ * @POSICAO-CURSOR = 705; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
