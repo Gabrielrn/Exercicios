@@ -1,7 +1,6 @@
 programa
 {
 	inclua biblioteca Matematica-->mat
--->mat
 	/*
 	 * 3) Desenvolva um sistema em que:
 Leia 4 (quatro) números;
