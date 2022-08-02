@@ -6,7 +6,7 @@ aluno. Considerar que a média é ponderada e que o peso das notas é: 2,3 e 5,
 respectivamente.
 	 */
 	
-	inclua biblioteca Matematica-->mat
+	inclua biblioteca Matematica-->mat
 	
 	funcao inicio()
 	{
