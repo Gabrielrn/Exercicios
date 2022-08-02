@@ -12,14 +12,13 @@ negativo.
 	{
 		real n=0.0,soma=0.0,media=0.0,total=0.0
 
-		
 		enquanto(n >= 0){
 			escreva("\nDigite um número positivo: ")
 			leia(n)
 			se(n > 0){
 			soma += n//soma = soma + n
-			media = soma / n
 			total++//total = total + 1
+			media = soma / total
 			}
 		}
 		escreva("\nSoma = ",soma)
@@ -32,7 +31,7 @@ negativo.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 705; 
+ * @POSICAO-CURSOR = 591; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

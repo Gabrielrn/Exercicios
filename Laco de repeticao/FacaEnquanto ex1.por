@@ -12,10 +12,10 @@ contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando não estive
 		faca{
 			escreva("\n ",cont)
 			se(cont >= 300 e cont <= 400){
-				cont = cont + 5
+				cont = cont + 3
 			}
 			senao{
-				cont = cont + 3
+				cont = cont + 5
 			}
 		}enquanto(cont <= 456)
 	}
@@ -25,7 +25,7 @@ contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando não estive
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 290; 
+ * @POSICAO-CURSOR = 310; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
