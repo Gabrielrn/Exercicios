@@ -5,7 +5,7 @@ programa
 calcule a seguinte expressão:
 	 */
 	
-	inclua biblioteca Matematica-->mat
+	inclua biblioteca Matematica-->mat
 	
 	funcao inicio()
 	{
