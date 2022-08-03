@@ -9,24 +9,25 @@ quantas foram as ocorrências da maior pontuação.
 	
 	funcao inicio()
 	{
-		inteiro dado[10],numDado,maiorP=0,x,ocorrencia=0
-		real mediaA=0.0,somaV=0.0
+		inteiro dado[10],somaDado=0,mediaA,maiorValor=0,x,quantidade=0
 
 		para(x=0;x<10;x++){
-			escreva("\nQual o valor do dado: ")//5 7 3 2 
-			leia(numDado)
-			se(maiorP <= numDado){
-				maiorP = numDado
-				ocorrencia++
+			escreva("\nEntre com o valor do dado: ")
+			leia(dado[x])
+			somaDado = dado[x] + somaDado
+			se(maiorValor<dado[x]){
+				maiorValor = dado[x]
+				quantidade=1
 			}
-			somaV += numDado
-			dado[x] += numDado
+			senao se(maiorValor==dado[x]){
+				quantidade++
+			}
 		}
-		mediaA = somaV / 10
-		escreva("\nSoma dos valores: ",somaV)
-		escreva("\nMédia Aritmética: ",mediaA)//4.25
-		escreva("\nMaior valor: ",maiorP)
-		escreva("\nOcorrência da maior pontuação: ",ocorrencia)
+		mediaA = somaDado/10
+		escreva("\nSoma dos dados: ",somaDado)
+		escreva("\nMédia dos dados: ",mediaA)
+		escreva("\nMaior valor: ",maiorValor)
+		escreva("\nOcorrência de maior pontuação: ",quantidade)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -34,7 +35,7 @@ quantas foram as ocorrências da maior pontuação.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 641; 
+ * @POSICAO-CURSOR = 858; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {dado, 12, 10, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
