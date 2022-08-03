@@ -10,10 +10,10 @@ posição das matrizes N1 e N2.
 	
 	funcao inicio()
 	{
-		inteiro n1[4][6],n2[4][6],m1[4][6],m2[4][6]
+		inteiro n1[3][2],n2[3][2],m1[3][2],m2[3][2]
 
-		para(inteiro linha=0;linha<4;linha++){
-			para(inteiro coluna=0;coluna<6;coluna++){
+		para(inteiro linha=0;linha<3;linha++){
+			para(inteiro coluna=0;coluna<2;coluna++){
 				escreva("\nDigite um valor para a matriz N1: ")
 				leia(n1[linha][coluna])
 				escreva("\nDigite um valor para a matriz N2: ")
@@ -23,6 +23,13 @@ posição das matrizes N1 e N2.
 				m2[linha][coluna] = n1[linha][coluna] - n2[linha][coluna]
 			}
 		}
+		para(inteiro linha=0;linha<3;linha++){
+			para(inteiro coluna=0;coluna<2;coluna++){
+				escreva("\nValor M1: ",m2[linha][coluna])
+				escreva("\nValor M1: ",m2[linha][coluna])
+			}
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +37,7 @@ posição das matrizes N1 e N2.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 369; 
+ * @POSICAO-CURSOR = 928; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {n1, 13, 10, 2}-{n2, 13, 19, 2}-{m1, 13, 28, 2}-{m2, 13, 37, 2};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
