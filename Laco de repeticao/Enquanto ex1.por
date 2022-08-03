@@ -21,6 +21,7 @@ negativo.
 			media = soma / total
 			}
 		}
+		escreva("-----------")
 		escreva("\nSoma = ",soma)
 		escreva("\nMédia = ",media)
 		escreva("\nTotal dos valores lidos = ",total)
@@ -31,7 +32,7 @@ negativo.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 591; 
+ * @POSICAO-CURSOR = 623; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
